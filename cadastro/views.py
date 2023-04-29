@@ -30,12 +30,14 @@ def livros(request):
 
 def autores(request):
     autores = Livros.objects.order_by('autor').distinct().values_list('autor', flat=True)
+   
 
     context = {
         'autores': autores
     }
 
     return render(request, 'autores.html', context)
+
 
 def editoras(request):
     editoras = Livros.objects.order_by('editora').distinct().values_list('editora', flat=True)
