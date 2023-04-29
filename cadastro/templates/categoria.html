@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block 'titulo' %} Busca - {{ busca }}- iLibrary - Gestão de Bibliotecas {% endblock %}
+{% block 'titulo' %} Categoria - {{ categoria.nome }}- iLibrary - Gestão de Bibliotecas {% endblock %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
@@ -10,7 +10,7 @@
     <!-- Conteudo - Inicio -->
         <div class="breadcrumb-area bg-12 text-center">
             <div class="container">
-                <h2>Busca: {{ busca }}</h2>
+                <h2>Categoria: {{ categoria.nome }}</h2>
             </div>
         </div>
     <!-- Conteudo - Fim -->
